@@ -47,7 +47,6 @@ flowchart LR
   - `sub_agents/`
     - `case_selector/`: case code 선택 에이전트
     - `counseling_generator/`: 상담 가이드(5개 섹션) 생성 에이전트
-        - `
     - `data_bootstrap/`: 외부 데이터/분석 결과를 세션 상태로 적재하는 에이전트
   - `mapping.py`
     - 성적/학습/출결 등의 분석 JSON을 `feature_json` 등의 형태로 변환하는 유틸리티
@@ -59,7 +58,7 @@ flowchart LR
 - **`sp_agent_app/`** – HTTP API 레이어
   - `main.py`
     - FastAPI 앱 정의
-    - 헬스체크 및 `/counsel`, `/batch-counsel` 엔드포인트 구현
+    - 헬스체크 및 `/counsel`, `/batch-counsel` 엔드포인트
   - `config.py`
     - 환경 변수 기반 설정 로직 (`concurrency_limit`, `batch_chunk_size` 등)
   - `models.py`
@@ -69,7 +68,7 @@ flowchart LR
   - `Dockerfile`
     - `sp_agent_app.main:app` 을 Cloud Run 등에서 실행하기 위한 컨테이너 이미지 정의
   - `requirements.txt`
-    - 최상위 의존성 진입점. 내부적으로 `-r sp_agent/requirements.txt` 를 포함합니다.
+    - 의존성 파일. 
 
 ---
 
@@ -80,12 +79,12 @@ flowchart LR
 - Python 3.12
 - `virtualenv` 또는 `python -m venv`
 - Google GenAI / ADK 관련 인증 정보
-  - 예: `GOOGLE_API_KEY` (조직 정책에 따라 실제 키 이름은 다를 수 있음)
+  - 예: `GOOGLE_API_KEY` 
 
 ### 2. 가상환경 생성 및 의존성 설치
 
 ```bash
-cd /path/to/Dev_CANB_counselor
+cd /path/to/canb_ai_care_agent
 
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -94,17 +93,12 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-- 최상위 `requirements.txt` 가 `sp_agent/requirements.txt` 를 포함하고 있으므로  
-  위 명령만으로 `sp_agent` + `sp_agent_app` 실행에 필요한 패키지가 설치됩니다.
-
 ### 3. 환경 변수 설정 (예시)
 
 ```bash
 export OPENAI_API_KEY="YOUR_API_KEY"
 # 필요 시 추가 환경 변수 (프로젝트/리전, 모델 설정 등)
 ```
-
-환경 변수 이름과 값은 회사/배포 환경에 맞게 조정해야 합니다.
 
 ---
 
@@ -113,8 +107,6 @@ export OPENAI_API_KEY="YOUR_API_KEY"
 `sp_agent_app` 는 현재 이 프로젝트에서 실제로 사용하는 **메인 HTTP 엔드포인트**입니다.
 
 ```bash
-source venv/bin/activate
-
 uvicorn sp_agent_app.main:app --host 0.0.0.0 --port 8080 --reload
 ```
 
@@ -125,7 +117,6 @@ uvicorn sp_agent_app.main:app --host 0.0.0.0 --port 8080 --reload
 - **배치 상담**
   - `POST http://localhost:8080/batch-counsel`
 
-개발/운영 환경에서는 보통 이 포트를 기반으로 Ingress 혹은 API Gateway 를 앞단에 두고 사용합니다.
 
 ---
 
@@ -138,7 +129,7 @@ uvicorn sp_agent_app.main:app --host 0.0.0.0 --port 8080 --reload
   - `member_code`: 학생 ID
   - `exam_test_code`: 시험 코드
   - `exam_div`, `exam_name`: 시험 구분/이름
-  - `course_code`: (선택) 과목 코드
+  - `course_code`: 과목 코드
   - `student_performance`:
     - `score_analysis`: 점수/성취도 및 분석 기간 (`analysis_period.start`, `analysis_period.end`)
     - `learning_routine`: 학습 루틴 관련 정보
@@ -207,6 +198,7 @@ CMD ["uvicorn", "sp_agent_app.main:app", "--host", "0.0.0.0", "--port", "8080"]
 gcloud builds submit \
   --tag $region-docker.pkg.dev/$프로젝트_ID/$아티팩트_레포/$서비스_이름:태그 .
 ```
+
 2. Cloud run 에서 해당 이미지 배포
 태그가 latest 인 경우
 ```
