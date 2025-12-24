@@ -1,0 +1,348 @@
+{
+    "batch_data": [
+      {
+        "exam_test_code": "99954",
+        "member_code": "CB00024657",
+        "course_code": 782,
+        "exam_div": "MT",
+        "exam_name": "2025 가을학기 Hexa 2 MT1",
+        "student_performance": {
+            "exam_test_code": "99954",
+            "member_code": "CB00024657",
+            "level_code": "780",
+            "exam_div": "MT",
+            "exam_name": "2025 가을학기 Hexa 2 MT1",
+            "alex_total_book_count": 11,
+            "alex_fiction_count": 11,
+            "alex_nonfiction_count": 0,
+            "alex_books_per_week": 3.0,
+            "alex_weekly_target": 3,
+            "alex_assess_level": "On",
+            "exam_scores": [
+            {
+                "subject_name": "Listening",
+                "subject_code": 264,
+                "exam_div": "MT",
+                "correct_score": 100.0,
+                "total_point": 100.0,
+                "score_percentage": 100.0,
+                "assess_level": "Advanced",
+                "weak_skills": []
+            },
+            {
+                "subject_name": "Reading",
+                "subject_code": 258,
+                "exam_div": "MT",
+                "correct_score": 100.0,
+                "total_point": 100.0,
+                "score_percentage": 100.0,
+                "assess_level": "Advanced",
+                "weak_skills": []
+            },
+            {
+                "subject_name": "Vocabulary",
+                "subject_code": 266,
+                "exam_div": "MT",
+                "correct_score": 30.0,
+                "total_point": 30.0,
+                "score_percentage": 100.0,
+                "assess_level": "Advanced",
+                "weak_skills": []
+            }
+            ],
+            "activity_scores": [
+            {
+                "subject_type": "Listening",
+                "total_activity_count": 2,
+                "completed_activity_count": 2,
+                "completion_rate": 100.0,
+                "completion_assess_level": "Advanced",
+                "average_score": 100.0,
+                "score_assess_level": "Advanced"
+            },
+            {
+                "subject_type": "Reading",
+                "total_activity_count": 3,
+                "completed_activity_count": 3,
+                "completion_rate": 100.0,
+                "completion_assess_level": "Advanced",
+                "average_score": 55.6,
+                "score_assess_level": "Developing"
+            },
+            {
+                "subject_type": "Vocabulary",
+                "total_activity_count": 3,
+                "completed_activity_count": 3,
+                "completion_rate": 100.0,
+                "completion_assess_level": "Advanced",
+                "average_score": 94.4,
+                "score_assess_level": "Advanced"
+            }
+            ],
+            "subject_learning_guidances": [
+            {
+                "subject_name": "Listening",
+                "course_code": 780,
+                "subject_code": 264,
+                "test_assess_level": "Advanced",
+                "readi_rate_assess_level": "Advanced",
+                "readi_score_assess_level": "Advanced",
+                "alex_rate_assess_level": "On",
+                "disp_test_info_yn": "Y",
+                "disp_weak_skill_yn": "Y",
+                "readi_comment_type": "A",
+                "disp_alex_info_yn": "Y",
+                "learning_recommendation": "약점 스킬 강화 학습, Alex 상위 (현재 레벨+1) 레벨 도서 읽기",
+                "mt_review_disp_yn": "Y",
+                "further_practice_type": "Type 3"
+            },
+            {
+                "subject_name": "Reading",
+                "course_code": 780,
+                "subject_code": 258,
+                "test_assess_level": "Advanced",
+                "readi_rate_assess_level": "Advanced",
+                "readi_score_assess_level": "Developing",
+                "alex_rate_assess_level": "On",
+                "disp_test_info_yn": "Y",
+                "disp_weak_skill_yn": "Y",
+                "readi_comment_type": "R",
+                "disp_alex_info_yn": "N",
+                "learning_recommendation": "READI 활동: Clinic 강화 활동, 약점 스킬 강화 학습",
+                "mt_review_disp_yn": "Y",
+                "further_practice_type": "Type 3"
+            },
+            {
+                "subject_name": "Vocabulary",
+                "course_code": 780,
+                "subject_code": 266,
+                "test_assess_level": "Advanced",
+                "readi_rate_assess_level": "Advanced",
+                "readi_score_assess_level": "Advanced",
+                "alex_rate_assess_level": "On",
+                "disp_test_info_yn": "Y",
+                "disp_weak_skill_yn": "Y",
+                "readi_comment_type": "A",
+                "disp_alex_info_yn": "Y",
+                "learning_recommendation": "약점 스킬 강화 학습, Alex 상위 (현재 레벨+1) 레벨 도서 읽기",
+                "mt_review_disp_yn": "Y",
+                "further_practice_type": "Type 3"
+            }
+            ],
+            "score_analysis": {
+                "analysis_period": {
+                    "start": "20250530",
+                    "end": "20251126"
+                },
+                "exams": [
+                    {
+                    "exam_test_code": "90500",
+                    "exam_name": "2025 여름학기 Hexa 1 MT1",
+                    "exam_type_code": "1006",
+                    "exam_date": "20250625",
+                    "total_score": 180,
+                    "rank": 38,
+                    "total_students": 58,
+                    "subjects": [
+                        {
+                        "subject_name": "Listening",
+                        "score": 70,
+                        "percentage": 70
+                        },
+                        {
+                        "subject_name": "Reading",
+                        "score": 80,
+                        "percentage": 80
+                        },
+                        {
+                        "subject_name": "Vocabulary",
+                        "score": 30,
+                        "percentage": 100
+                        }
+                    ]
+                    },
+                    {
+                    "exam_test_code": "94432",
+                    "exam_name": "2025 여름학기 Hexa 1 MT2",
+                    "exam_type_code": "1006",
+                    "exam_date": "20250722",
+                    "total_score": 200,
+                    "rank": 36,
+                    "total_students": 58,
+                    "subjects": [
+                        {
+                        "subject_name": "Listening",
+                        "score": 80,
+                        "percentage": 80
+                        },
+                        {
+                        "subject_name": "Reading",
+                        "score": 90,
+                        "percentage": 90
+                        },
+                        {
+                        "subject_name": "Vocabulary",
+                        "score": 30,
+                        "percentage": 100
+                        }
+                    ]
+                    },
+                    {
+                    "exam_test_code": "98950",
+                    "exam_name": "2025 여름학기 Hexa 1 MT3",
+                    "exam_type_code": "1006",
+                    "exam_date": "20250814",
+                    "total_score": 230,
+                    "rank": 1,
+                    "total_students": 65,
+                    "subjects": [
+                        {
+                        "subject_name": "Listening",
+                        "score": 100,
+                        "percentage": 100
+                        },
+                        {
+                        "subject_name": "Reading",
+                        "score": 100,
+                        "percentage": 100
+                        },
+                        {
+                        "subject_name": "Vocabulary",
+                        "score": 30,
+                        "percentage": 100
+                        }
+                    ]
+                    },
+                    {
+                    "exam_test_code": "99954",
+                    "exam_name": "2025 가을학기 Hexa 2 MT1",
+                    "exam_type_code": "1006",
+                    "exam_date": "20250918",
+                    "total_score": 230,
+                    "rank": 1,
+                    "total_students": 70,
+                    "subjects": [
+                        {
+                        "subject_name": "Listening",
+                        "score": 100,
+                        "percentage": 100
+                        },
+                        {
+                        "subject_name": "Reading",
+                        "score": 100,
+                        "percentage": 100
+                        },
+                        {
+                        "subject_name": "Vocabulary",
+                        "score": 30,
+                        "percentage": 100
+                        }
+                    ]
+                    },
+                    {
+                    "exam_test_code": "102639",
+                    "exam_name": "2025 가을학기 Hexa 2 MT2",
+                    "exam_type_code": "1006",
+                    "exam_date": "20251023",
+                    "total_score": 220,
+                    "rank": 15,
+                    "total_students": 72,
+                    "subjects": [
+                        {
+                        "subject_name": "Listening",
+                        "score": 100,
+                        "percentage": 100
+                        },
+                        {
+                        "subject_name": "Reading",
+                        "score": 90,
+                        "percentage": 90
+                        },
+                        {
+                        "subject_name": "Vocabulary",
+                        "score": 30,
+                        "percentage": 100
+                        }
+                    ]
+                    }
+                ],
+                "score_features": {
+                    "PCT": 20.83,
+                    "PCT_TR": [
+                    65.52,
+                    62.07,
+                    1.54,
+                    1.43,
+                    20.83
+                    ],
+                    "SCORE_CHG": -10,
+                    "CONSEC_IMP": 0,
+                    "SESSION_DIFF": 50,
+                    "SINGLE_DROP": true
+                },
+                "exam_detail_features": {
+                    "SUBJ_DIFF": 70,
+                    "SUBJ_DIFF_TR": "유지",
+                    "LOW_DIFF_ERR_RATE": 3.45
+                }
+                },
+            "learning_routine": {
+                "analysis_period": {
+                    "start": "20250530",
+                    "end": "20251126"
+                },
+                "monthly_records": [
+                    {
+                    "month": "6 ",
+                    "readi_completion_rate": 100,
+                    "alex_book_count": 13
+                    },
+                    {
+                    "month": "7 ",
+                    "readi_completion_rate": 100,
+                    "alex_book_count": 17
+                    },
+                    {
+                    "month": "8 ",
+                    "readi_completion_rate": 96.3,
+                    "alex_book_count": 11
+                    },
+                    {
+                    "month": "9 ",
+                    "readi_completion_rate": 100,
+                    "alex_book_count": 12
+                    },
+                    {
+                    "month": "10",
+                    "readi_completion_rate": 92.9,
+                    "alex_book_count": 12
+                    },
+                    {
+                    "month": "11",
+                    "readi_completion_rate": 54.2,
+                    "alex_book_count": 7
+                    }
+                ],
+                "features": {
+                    "ASGN_RATE": 54.2,
+                    "ASGN_TR": "하락",
+                    "READ_CNT": 7,
+                    "READ_TR": "하락",
+                    "ONLINE_GAP": null
+                }
+            },
+            "attendance": {
+                "analysis_period": {
+                    "start": "20250530",
+                    "end": "20251126"
+                },
+                "monthly_records": [],
+                "features": {
+                    "ABS_CNT": null,
+                    "ABS_TR": null
+                }
+            }
+          }
+        } 
+    ]
+}
